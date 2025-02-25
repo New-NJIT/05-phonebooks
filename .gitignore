@@ -1,0 +1,2 @@
+# Ignore large test data files
+*.txt
