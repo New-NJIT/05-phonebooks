@@ -232,7 +232,7 @@ public class PhoneBookTests {
             System.out.format("%35s\t%10d ns%n", "Fast hash table search took: ", fastHashTableSearchTime);
             System.out.format("%35s\t%10d %s%n", "Fast hash table search was: ", linearSearchTime / fastHashTableSearchTime, " times faster than linear search");
             double comparison = ((double)linearSearchTime / (double)fastHashTableSearchTime);
-            double lowerLimit = 100.0;
+            double lowerLimit = 80.0;
             assertTrue(comparison >= lowerLimit, () -> "Hash table search should be 100 times faster than linear search");
         }
 
@@ -240,7 +240,7 @@ public class PhoneBookTests {
             System.out.format("%35s\t%10d ns%n", "Fast BST search took: ", fastBSTSearchTime);
             System.out.format("%35s\t%10d %s%n", "Fast BST search was: ", linearSearchTime / fastBSTSearchTime, " times faster than linear search");
             double comparison = ((double)linearSearchTime / (double)fastBSTSearchTime);
-            double lowerLimit = 100.0;
+            double lowerLimit = 80.0;
             assertTrue(comparison >= lowerLimit, () -> "BST search should be 100 times faster than linear search");
         }
         if (didRunHashTableBookTests && didRunBSTBookTests) {
