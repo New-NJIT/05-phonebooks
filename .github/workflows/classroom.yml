@@ -16,6 +16,7 @@ jobs:
     - name: Download test files from Google Drive
       run: |
         curl -L "https://drive.google.com/uc?export=download&id=1ZP4J3KO3XbrQ4YYQHxMPwn-t6x1DByTc" -o village.txt
+        curl -L "https://drive.google.com/uc?export=download&id=11EWaIunT5ecl7Fc8V_YVYqkPdtI4lKDa" -o PhoneBook.txt
         curl -L "https://drive.google.com/uc?export=download&id=1iUyqLmfRWh3JMhhlSpcXI3O6Rmmo-vMR" -o small-town.txt
         curl -L "https://drive.google.com/uc?export=download&id=1VqiZ8HfMLGLNN5xg5Wl4yS6g3K2-AUfq" -o town.txt
         curl -L "https://drive.google.com/uc?export=download&id=1ZX3fkdLLYIfazkY9SHQMlpGou-kZsZeB" -o large-town.txt
