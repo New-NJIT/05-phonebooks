@@ -106,30 +106,38 @@ jobs:
         command: mvn -Dtest=HashFuncTests#testHashtableWithIdenticalHashDifferentObject
           test
         timeout: 10
-    - name: Read from file to slow phonebook
-      id: read-from-file-to-slow-phonebook
+    - name: readAll
+      id: readAll
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: Read from file to slow phonebook
+        test-name: Read All
         setup-command: mvn compile
-        command: mvn -Dtest=PhoneBookTests#readFromFileToSlowPhoneBook test
+        command: mvn -Dtest=PhoneBookTests test
         timeout: 10
-    - name: Read from file to BST
-      id: read-from-file-to-bst
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: Read from file to BST
-        setup-command: mvn compile
-        command: mvn -Dtest=PhoneBookTests#readFromFileToBST test
-        timeout: 10
-    - name: Read from file to HT
-      id: read-from-file-to-ht
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: Read from file to HT
-        setup-command: mvn compile
-        command: mvn -Dtest=PhoneBookTests#readFromFileToHashtable test
-        timeout: 10
+    #- name: Read from file to slow phonebook
+    #  id: read-from-file-to-slow-phonebook
+    #  uses: classroom-resources/autograding-command-grader@v1
+    #  with:
+    #    test-name: Read from file to slow phonebook
+    #    setup-command: mvn compile
+    #    command: mvn -Dtest=PhoneBookTests#readFromFileToSlowPhoneBook test
+    #    timeout: 10
+    #- name: Read from file to BST
+    #  id: read-from-file-to-bst
+    #  uses: classroom-resources/autograding-command-grader@v1
+    #  with:
+    #    test-name: Read from file to BST
+    #    setup-command: mvn compile
+    #    command: mvn -Dtest=PhoneBookTests#readFromFileToBST test
+    #    timeout: 10
+    #- name: Read from file to HT
+    #  id: read-from-file-to-ht
+    #  uses: classroom-resources/autograding-command-grader@v1
+    #  with:
+    #    test-name: Read from file to HT
+    #    setup-command: mvn compile
+    #    command: mvn -Dtest=PhoneBookTests#readFromFileToHashtable test
+    #    timeout: 10
     - name: Check if faster solutions are enough faster than the slow solution
       id: check-if-faster-solutions-are-enough-faster-than-the-slow-solution
       uses: classroom-resources/autograding-command-grader@v1
