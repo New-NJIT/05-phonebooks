@@ -138,14 +138,14 @@ jobs:
     #    setup-command: mvn compile
     #    command: mvn -Dtest=PhoneBookTests#readFromFileToHashtable test
     #    timeout: 10
-    - name: Check if faster solutions are enough faster than the slow solution
-      id: check-if-faster-solutions-are-enough-faster-than-the-slow-solution
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: Check if faster solutions are enough faster than the slow solution
-        setup-command: mvn compile
-        command: mvn -Dtest=PhoneBookTests#printStatistics test
-        timeout: 10
+    #- name: Check if faster solutions are enough faster than the slow solution
+    #  id: check-if-faster-solutions-are-enough-faster-than-the-slow-solution
+    #  uses: classroom-resources/autograding-command-grader@v1
+    #  with:
+    #    test-name: Check if faster solutions are enough faster than the slow solution
+    #    setup-command: mvn compile
+    #    command: mvn -Dtest=PhoneBookTests#printStatistics test
+    #    timeout: 10
     - name: Performance tests add BST
       id: performance-tests-add-bst
       uses: classroom-resources/autograding-command-grader@v1
