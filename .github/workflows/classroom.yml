@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - nmae: Download test files from Google Drive
+    - name: Download test files from Google Drive
       run: |
         curl -L "https://drive.google.com/uc?export=download&id=1ZP4J3KO3XbrQ4YYQHxMPwn-t6x1DByTc" -o village.txt
         curl -L "https://drive.google.com/uc?export=download&id=1iUyqLmfRWh3JMhhlSpcXI3O6Rmmo-vMR" -o small-town.txt
