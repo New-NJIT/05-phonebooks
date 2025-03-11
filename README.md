@@ -100,7 +100,7 @@ In the next section, below, the `hashCode` you implement will be used in your ha
 
 You will also use the key's (`Person`'s) `hashCode` in the BST implementation to quickly navigate the BST tree.
 
-For the next step, `hashCode` may just return a constant random value, since a good implementation of this method is not needed until in steps 4 and 5.
+**You need to implement the method hashCode() in class Person.java now.** And remember, **you must implement it yourself!** You are **not allowed to use the Java hashCode method or anything similar at any point in any way.** For example, you may use the value computation presented in the lecture slides. Preferably, you should try to make a better one.
 
 ## Step 3 - Instructions for implementing hash table and BST 
 
@@ -184,12 +184,9 @@ These tests use `String` as the key `K` to the `Dictionary`, and `Integer` as th
 
 **Finally**, the instructions for executing `PerformanceTests`.
 
-The amount of test data is so large that those files are not included in this repository. **Download** The test data file `towns.zip` using this link:
+The amount of test data is so large that those files are not included in this repository. **Download** The test data file `phoneBooks.zip` from Moodle.
 
-**UPDATE LINK**
-[https://moodle.njit.edu.cn/mod/resource/view.php?id=7694](https://moodle.njit.edu.cn/mod/resource/view.php?id=7694)
-
- **Unzip** `towns.zip` contents and copy or move to the **root directory of this exercise**, so that tests can find the files. **DO NOT COPY THE PhoneBook.txt FILE!** It contains a different number of names, so some tests will fail if you copy it. **Never ever add these test files to git!!!**
+ **Unzip** `phoneBooks.zip` contents and copy or move to the **root directory of this exercise**, so that tests can find the files. **Never ever add these test files to git!!!**
 
 This test creates a file `compare.csv` that has data on executing the test files, e.g. the number of elements (persons) in the dictionary per test file, and the time taken to add the elements to the dictionaries.
 
@@ -217,6 +214,8 @@ You only need to change the **`Person.java`**, **`KeyValueHashTable`** and **`Ke
 
 
 ## Delivery
+
+There is a .gitignore file in the root of the repository that should prevent you from committing and pushing the .txt files to your GitHub repository. However, if you want to be on the safe side, you can remove the .txt files before committing and pushing. If you try to force push them, GitHub will prevent it because some of the files are too big. This will result in a failed push and the test will not run.
 
 **Remember** to add any new code files to git (instructions below).
 
